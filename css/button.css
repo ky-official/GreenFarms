@@ -19,7 +19,7 @@
 
 .btn-small>::after {
     position: relative;
-    content: url('/svg/btn_arrow_right.svg');
+    content: url('../svg/btn_arrow_right.svg');
     cursor: pointer;
     top: 0.1rem;
     margin-left: 0.7rem;
