@@ -5,6 +5,7 @@
     grid-gap: 0.83%;
     grid-template-areas: "top-left  . . . . . . . . . . top-right" "hero hero hero hero . . . collage collage collage collage collage";
     width: 85%;
+    min-height: 100%;
     margin-top: 4.3rem;
 }
 
@@ -301,5 +302,13 @@
     }
     .btn-proceed {
         margin-top: 0;
+    }
+}
+
+@media (max-height:500px) {
+    .main-container,
+    .details-container,
+    .menu-container {
+        height: 700px;
     }
 }
