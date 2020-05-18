@@ -22,7 +22,7 @@ html {
 body {
     margin: 0;
     /* overflow: hidden; */
-    background: url('/svg/background.svg') no-repeat center fixed;
+    background: url('/GreenFarms/svg/background.svg') no-repeat center fixed;
     background-size: cover;
     min-height: 100%;
 }
