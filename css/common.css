@@ -14,12 +14,17 @@
     box-sizing: inherit;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     margin: 0;
     /* overflow: hidden; */
-    background: url('/GreenFarms/svg/background.svg') no-repeat center fixed;
+    background: url('/svg/background.svg') no-repeat center fixed;
     background-size: cover;
-    -webkit-background-size: cover;
+    min-height: 100%;
 }
 
 a {
