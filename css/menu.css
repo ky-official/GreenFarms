@@ -1,0 +1,89 @@
+.menu-container {
+    background-color: #272727;
+    color: #6e6e6e;
+    opacity: 0;
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu-label {
+    width: 3rem;
+    margin: 0;
+    font-family: "HelveticaNeue";
+    font-size: 2.0rem;
+    top: 3.8rem;
+    left: 7.5%;
+}
+
+.menu-links {
+    list-style: none;
+    width: 30%;
+    top: 12rem;
+}
+
+.menu-links>a {
+    display: block;
+    text-align: center;
+    font-size: 2.9rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.menu-links>a:hover {
+    color: #b8b8b8;
+}
+
+.menu-container.is-active {
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    display: initial;
+    animation: 0.4s ease-in-out 0s forwards normal reveal;
+}
+
+.menu-container.hide {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    animation: 0.3s ease-in-out 0s forwards normal hide;
+}
+
+@-webkit-keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

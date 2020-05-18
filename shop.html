@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Green Farms Online Store</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/shop.css">
+
+    <!--support library-->
+    <script src="js/support.js"></script>
+    <!--handleBar-->
+    <script src="js/Handlebars.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- main-->
+    <script src="js/main.js"></script>
+
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="nav-bar-container fixed align-center-fixed grid">
+        <div class="menu-container fixed">
+            <p class="menu-label relative">Menu</p>
+            <li class="menu-links relative align-center">
+                <a href="#">Profile</a>
+                <a href="#">Orders</a>
+                <a href="#">Basket</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy</a>
+
+            </li>
+        </div>
+        <div class="logo-container">
+            <img src="/svg/logo_dark.svg" alt="" class="logo block align-center-vertical">
+        </div>
+        <div id="profile-container" class="profile-container relative">
+            <img src="/svg/btn_profile.svg" alt="" class="align-center-vertical btn-profile">
+        </div>
+        <div class="basket-container relative">
+            <p class="inline-block relative">0</p>
+            <img class="btn-basket align-center-vertical" src="/svg/btn-basket.svg" alt="">
+            <p class="inline-block relative">Basket</p>
+        </div>
+        <div class="hamburger hamburger-dark relative">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+
+    <!-- <div class="align-center fit"></div> -->
+    <div class="products-container grid align-center relative fit">
+    </div>
+
+
+
+    <!--templates-->
+    <script type="text/x-handlebars-template" id="product-template">
+        <div class="product-container relative " id={{pr_id}}>
+            <div class="product-img-container relative" style="background:linear-gradient(to bottom, rgba(43, 43, 43, 0), rgba(0, 0, 0, 0.712)), url({{pr_img}}) no-repeat 0, 0 fixed;">
+                <p class="product-name relative">{{pr_name}}</p>
+            </div>
+            <p class="product-label">{{pr_label}}</p>
+            <p class="product-price">N{{pr_price}}</p>
+            <div class="btn-add-to-basket">Add to Basket</div>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="profile-template">
+        <p class="inline-block relative"> Hi there {{cust_name}} </p>
+    </script>
+</body>
+
+</html>
