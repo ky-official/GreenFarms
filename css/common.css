@@ -1,8 +1,11 @@
 @font-face {
     font-family: 'Helvetica';
-    src: url("../fonts/HelveticaNeueHv.ttf");
-    font-weight: bolder;
-    font-style: normal;
+    src: url("../fonts/HelveticaNeueLt.ttf");
+}
+
+@font-face {
+    font-family: 'Poison';
+    src: url("../fonts/Poison-Regular.ttf");
 }
 
 * {
